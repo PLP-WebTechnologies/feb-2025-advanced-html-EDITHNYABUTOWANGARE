@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML Page</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to the Sample Page</h1>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Top 5 Activities</h2>
+        <ol type="I">
+            <li>Reading</li>
+            <li>Coding</li>
+            <li>Traveling</li>
+            <li>Gaming</li>
+            <li>Photography</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>Featured Image</h2>
+        <img 
+            src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg" 
+            alt="Scenic Landscape from Pexels" 
+            width="600"
+        >
+    </section>
+
+    <!-- Table of Contacts -->
+    <section>
+        <h2>Contact List</h2>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alice Johnson</td>
+                    <td>123 Maple St, Springfield</td>
+                    <td>+1 555-1234</td>
+                    <td>alice@example.com</td>
+                </tr>
+                <tr>
+                    <td>Bob Smith</td>
+                    <td>456 Oak Ave, Shelbyville</td>
+                    <td>+1 555-5678</td>
+                    <td>bob@example.com</td>
+                </tr>
+                <tr>
+                    <td>Charlie Brown</td>
+                    <td>789 Pine Rd, Capital City</td>
+                    <td>+1 555-8765</td>
+                    <td>charlie@example.com</td>
+                </tr>
+                <tr>
+                    <td>Diana Prince</td>
+                    <td>101 Elm Dr, Metropolis</td>
+                    <td>+1 555-4321</td>
+                    <td>diana@example.com</td>
+                </tr>
+                <tr>
+                    <td>Edward Norton</td>
+                    <td>202 Birch Ln, Gotham</td>
+                    <td>+1 555-3456</td>
+                    <td>edward@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <!-- Name -->
+            <label for="name">Full Name:</label>
+            <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Enter your full name" 
+                required
+            ><br><br>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="example@domain.com" 
+                required
+            ><br><br>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                placeholder="Create a password" 
+                minlength="6" 
+                required
+            ><br><br>
+
+            <!-- Date -->
+            <label for="dob">Date of Birth:</label>
+            <input 
+                type="date" 
+                id="dob" 
+                name="dob" 
+                required
+            ><br><br>
+
+            <!-- Dropdown -->
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">--Select your country--</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="ca">Canada</option>
+                <option value="au">Australia</option>
+                <option value="ng">Nigeria</option>
+            </select><br><br>
+
+            <!-- Radio Buttons -->
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+
+            <!-- Checkboxes -->
+            <p>Hobbies:</p>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+            <label for="traveling">Traveling</label><br>
+            <input type="checkbox" id="sports" name="hobbies" value="sports">
+            <label for="sports">Sports</label><br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sample Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
